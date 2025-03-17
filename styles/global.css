@@ -9,6 +9,13 @@
     --font-baloo: "Baloo 2", sans-serif;
     --font-open: "Open Sans", sans-serif;
 
+    --text-logo: 400 2.5rem/150% var(--font-leckerli);
+    --heading-md: 700 1.75rem/100% var(--font-baloo);
+    --heading-sm: 700 1.125rem/100% var(--font-baloo);
+    --body-md: 400 1rem/100% var(--font-open);
+    --body-sm: 400 .875rem/100% var(--font-open);
+    --body-xs: 400 .75rem/100% var(--font-open);
+
     --brand-light: #59B2FF;
     --brand-mid: #3487CF;
     --brand-dark: #1D6FB6;
@@ -26,6 +33,11 @@
 
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
+}
+
+html {
+    color: var(--text-body);
+    background-color: #1e1e1e;
 }
 
 .flex {

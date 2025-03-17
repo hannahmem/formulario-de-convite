@@ -12,7 +12,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <aside></aside>
-    <main></main>
+    <div id="app">
+        <aside>
+            <div class="aside-container">
+                <img src="assets/logo.svg" alt="Logo festivite">
+                <h1>Festivite</h1>
+                <p>Crie um convite digital para o seu evento</p>
+            </div>
+            <img src="assets/background.svg" alt="Pedaço de bolo com uma vela apagada">
+        </aside>
+
+        <main>
+            <div class="main-container">
+                <h2>Crie seu convite</h2>
+                <div class="about-title">
+                    <img src="assets/icons/calendar.svg" alt="">
+                    <h3>Sobre o evento</h3>
+                </div>
+                <form>
+                    <fieldset class="about">
+                        <div class="input-wrapper">
+                            <label for="event-name">Título</label>
+                            <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
+                        </div>
+
+                        <div class="grid-container">
+                            <div class="input-wrapper">
+                                    <label for="start-date">Início</label>
+                                    <input type="datetime" name="start-date" id="start-date">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="end-date">Fim</label>
+                                <input type="datetime" name="end-date" id="end-date">
+                            </div>
+                        </div>
+
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
