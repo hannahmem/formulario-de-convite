@@ -1,0 +1,49 @@
+.input-color-wrapper {
+    display: flex;
+    gap: .75rem;
+}
+
+.radio-color-inner {
+    cursor: pointer;
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .blue {
+        background-color: var(--brand-light);
+        border: 0.3125rem solid var(--shape-button);
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;        
+    }
+
+    .navy {
+        background-color: #6A59FF;
+        border: 0.3125rem solid var(--shape-button);
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;        
+    }
+
+    .purple {
+        background-color: #B259FF;
+        border: 0.3125rem solid var(--shape-button);
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;        
+    }
+    
+    &:has(:checked) {
+        .color-img {
+            outline: 2px solid var(--brand-light);
+        }
+    }
+
+    &:hover {
+        .color-img {
+            border: 0.3125rem solid var(--shape-hover);
+            transition: ease-in-out .15s;
+        }
+    }
+}

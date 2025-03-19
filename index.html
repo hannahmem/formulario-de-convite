@@ -18,8 +18,8 @@
                 <img src="assets/logo.svg" alt="Logo festivite">
                 <h1>Festivite</h1>
                 <p>Crie um convite digital para o seu evento</p>
+                <div class="background-img"></div>
             </div>
-            <img src="assets/background.svg" alt="Pedaço de bolo com uma vela apagada">
         </aside>
 
         <main>
@@ -30,7 +30,7 @@
                     <h3>Sobre o evento</h3>
                 </div>
                 <form>
-                    <fieldset class="about">
+                    <fieldset class="fieldset-wrapper">
                         <div class="input-wrapper">
                             <label for="event-name">Título</label>
                             <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
@@ -39,15 +39,168 @@
                         <div class="grid-container">
                             <div class="input-wrapper">
                                     <label for="start-date">Início</label>
-                                    <input type="datetime" name="start-date" id="start-date">
+                                    <input type="datetime-local" name="start-date" id="start-date" lang="pt-br">
                             </div>
                             <div class="input-wrapper">
                                 <label for="end-date">Fim</label>
-                                <input type="datetime" name="end-date" id="end-date">
+                                <input type="datetime-local" name="end-date" id="end-date" lang="pt-br">
                             </div>
                         </div>
 
-                        
+                        <div class="grid-container">
+                            <div class="input-wrapper">
+                                <label for="type">Tipo</label>
+                                <div>
+                                    <input type="checkbox" value="Presencial">
+                                </div>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="address">Local</label>
+                                <input type="text" name="address" id="address" placeholder="Link ou endereço">
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" rows="8" placeholder="Descreva os detalhes do evento"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldset-wrapper">
+                        <div class="edit-title">
+                            <img src="assets/icons/paintbrush-vertical.svg" alt="">
+                            <h3>Personalização</h3>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label>Cor principal</label>
+
+                            <div class="input-color-wrapper">
+                                <label for="blue">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="blue">
+                                        <div class="color-img blue"></div>
+                                    </div>
+                                </label>
+                                
+                                <label for="navy">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="navy">
+                                        <div class="color-img navy"></div>
+                                    </div>
+                                </label>
+
+                                <label for="purple">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="purple">
+                                        <div class="color-img purple"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label>Tema do evento</label>
+
+                            <div class="radio-wrapper">
+                                <label for="birthday">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="birthday" checked>
+                                        <img src="assets/aniversario.svg" alt="Bolo de aniversário">
+                                        <span>Aniversário</span>
+                                    </div>
+                                </label>
+
+                                <label for="children">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="children">
+                                        <img src="assets/infantil.svg" alt="Objetos de festa coloridos">
+                                        <span>Infantil</span>
+                                    </div>
+                                </label>
+
+                                <label for="graduation">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="graduation">
+                                        <img src="assets/formatura.svg" alt="Chapéu de formatura">
+                                        <span>Formatura</span>
+                                    </div>
+                                </label>
+
+                                <label for="marriage">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="marriage" value="marriage">
+                                        <img src="assets/casamento.svg" alt="Alianças de casamento">
+                                        <span>Casamento</span>
+                                    </div>
+                                </label>
+
+                                <label for="baby-shower">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="baby-shower">
+                                        <img src="assets/cha-de-bebe.svg" alt="Flores ao lado de um pacote de lenço de papel umedecido">
+                                        <span>Chá de bebê</span>
+                                    </div>
+                                </label>
+
+                                <label for="bridal-shower">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="bridal-shower">
+                                        <img src="assets/cha-de-panela.svg" alt="Jogo de panelas arrumados em uma cozinha">
+                                        <span>Chá de panela</span>
+                                    </div>
+                                </label>
+
+                                <label for="carnaval">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="carnaval">
+                                        <img src="assets/carnaval.svg" alt="Confete e serpentina coloridos">
+                                        <span>Carnaval</span>
+                                    </div>
+                                </label>
+
+                                <label for="easter">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="easter">
+                                        <img src="assets/pascoa.svg" alt="Ovos efeitados e pintados com um rosto feliz">
+                                        <span>Páscoa</span>
+                                    </div>
+                                </label>
+
+                                <label for="sao-joao">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="sao-joao">
+                                        <img src="assets/sao-joao.svg" alt="Bandeirinhas de festa junina">
+                                        <span>São João</span>
+                                    </div>
+                                </label>
+
+                                <label for="halloween">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="halloween">
+                                        <img src="assets/halloween.svg" alt="Abóboras de halloween iluminadas">
+                                        <span>Halloween</span>
+                                    </div>
+                                </label>
+
+                                <label for="christmas">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="christmas">
+                                        <img src="assets/natal.svg" alt="Presentes de natal">
+                                        <span>Natal</span>
+                                    </div>
+                                </label>
+
+                                <label for="other">
+                                    <div class="radio-inner">
+                                        <input type="radio" name="theme" id="other">
+                                        <img src="assets/outro.svg" alt="Pessoas brindando">
+                                        <span>Outro</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>

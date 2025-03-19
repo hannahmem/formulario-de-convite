@@ -1,5 +1,4 @@
 #app {
-    margin: auto;
     max-width: 80rem;
     display: grid;
     grid-template-columns: 34.375% 65.625%;
@@ -13,10 +12,16 @@ aside {
     
     & .aside-container {
         border-radius: .75rem;
-        background-color: var(--shape-body);
+        padding: 2rem 2rem 0;
         max-width: 25rem;
-        padding-left: 2rem;
-        padding-top: 2rem;
+        height: 45.5rem;
+
+        background: linear-gradient(180deg, rgba(33, 37, 38, 0.8) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.3) 40.5%, rgba(33, 37, 38, 0.1) 100%), 
+        url(/assets/background.svg) center/cover;
+        
+        & > img {
+            max-width: 2.865rem;
+        }
     }
 
     h1 {
@@ -31,8 +36,6 @@ aside {
         font-weight: 300;
         color: var(--text-heading);
     }
-
-    
 }
 
 main {
@@ -48,7 +51,7 @@ main {
         padding: 5rem 8.125rem;
     }
 
-    & .about {
+    & .fieldset-wrapper {
         border: none;
         display: grid;
         gap: 1rem;
@@ -87,5 +90,13 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+    
+    & .edit-title {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        margin-top: 3rem;
+        margin-bottom: 1.625rem;
     }
 }
