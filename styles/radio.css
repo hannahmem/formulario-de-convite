@@ -24,6 +24,6 @@
     }
     
     &:has(:checked) {
-        border: 2px solid var(--brand-light);
+        outline: 2px solid var(--brand-light);
     }   
 }

@@ -50,8 +50,9 @@
                         <div class="grid-container">
                             <div class="input-wrapper">
                                 <label for="type">Tipo</label>
-                                <div>
-                                    <input type="checkbox" value="Presencial">
+                                <div class="radio-type-wrapper">
+                                    <input type="radio" name="type" id="presencial">
+                                    <input type="radio" name="type" id="online">
                                 </div>
                             </div>
 
@@ -80,21 +81,88 @@
                                 <label for="blue">
                                     <div class="radio-color-inner">
                                         <input type="radio" name="color" id="blue">
-                                        <div class="color-img blue"></div>
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: var(--brand-light)"></div>
                                     </div>
                                 </label>
                                 
                                 <label for="navy">
                                     <div class="radio-color-inner">
                                         <input type="radio" name="color" id="navy">
-                                        <div class="color-img navy"></div>
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #6A59FF"></div>
                                     </div>
                                 </label>
 
                                 <label for="purple">
                                     <div class="radio-color-inner">
                                         <input type="radio" name="color" id="purple">
-                                        <div class="color-img purple"></div>
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #B259FF"></div>
+                                    </div>
+                                </label>
+
+                                <label for="fuschia">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="fuschia">
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #FF59F9"></div>
+                                    </div>
+                                </label>
+
+                                <label for="pink">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="pink" checked>
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #FF598B"></div>
+                                    </div>
+                                </label>
+
+                                <label for="danger">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="danger">
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: var(--feedback-color)"></div>
+                                    </div>
+                                </label>
+
+                                <label for="orange">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="orange">
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #FF8B59"></div>
+                                    </div>
+                                </label>
+
+                                <label for="yellow">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="yellow">
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #FFCD59"></div>
+                                    </div>
+                                </label>
+
+                                <label for="lime">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="lime">
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #E1FF59"></div>
+                                    </div>
+                                </label>
+
+                                <label for="green">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="green">
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #59FF91"></div>
+                                    </div>
+                                </label>
+
+                                <label for="cyan">
+                                    <div class="radio-color-inner">
+                                        <input type="radio" name="color" id="cyan">
+                                        <div class="outer-circle"></div>
+                                        <div class="color-img" style="--color: #59FFF9"></div>
                                     </div>
                                 </label>
                             </div>
@@ -199,6 +267,27 @@
                                         <span>Outro</span>
                                     </div>
                                 </label>
+                            </div>
+                        </div>
+                        
+                        <div class="slider-file-container">
+                            <div class="slider-wrapper">
+                                <label for="style" class="switch">Estilo
+                                    <input type="checkbox" name="style" id="style">
+                                    <div class="slider"></div>
+                                </label>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="cover">Foto de capa</label>
+
+                                <div class="selectzone">
+                                    <label for="cover" class="custom-file">
+                                        <input type="file" name="cover" id="cover">
+                                        <img src="assets/icons/upload.svg" alt="">
+                                        Selecionar
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </fieldset>

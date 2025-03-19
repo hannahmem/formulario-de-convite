@@ -4,7 +4,7 @@ input, textarea {
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: .8125rem 1rem;
 
     font: var(--body-md);
     color: var(--text-heading);
@@ -15,8 +15,7 @@ textarea {
 }
 
 input:focus, textarea:focus {
-    outline: none;
-    border: 1px solid var(--brand-light);
+    outline: 1.5px solid var(--brand-light);
 }
 
 input[type="datetime-local"] {

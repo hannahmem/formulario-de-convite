@@ -1,5 +1,9 @@
-input[type="range"] {
+.radio-type-wrapper {
+    input {
+        display: none;
+    }
 
-    -webkit-appearance: none;
-    appearance: none;
+    background-color: var(--shape-body);
+    /* border: 1px solid; */
 }
+
