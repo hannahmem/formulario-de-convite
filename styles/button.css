@@ -1,0 +1,28 @@
+.invitation {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: var(--brand-dark);
+
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+
+    color: var(--text-heading);
+    font: var(--body-md);
+    font-weight: 600;
+    border: none;
+    border-radius: .5rem;
+    padding: .875rem 1.25rem;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--brand-mid);
+    }
+}

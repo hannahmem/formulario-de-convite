@@ -57,28 +57,12 @@ main {
         gap: 1rem;
     }
 
-    & h2 {
-        font: var(--heading-md);
-        color: var(--text-heading);
-        padding-bottom: 2.5rem;
-    }
-
     & .about-title {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: .75rem;
         margin-bottom: 1.625rem;
-    }
-
-    & h3 {
-        font: var(--heading-sm);
-        color: var(--text-heading);
-    }
-
-    label {
-        font: var(--body-sm);
-        color: var(--text-body);
     }
 
     & .input-wrapper {
@@ -92,7 +76,7 @@ main {
         gap: 1rem;
     }
     
-    & .edit-title {
+    & .header-container {
         display: flex;
         align-items: center;
         gap: .75rem;

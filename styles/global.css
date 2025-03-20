@@ -40,6 +40,22 @@ html {
     background-color: #1e1e1e;
 }
 
+h3 {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+}
+
+h2 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+    padding-bottom: 2.5rem;
+}
+
+label {
+    font: var(--body-sm);
+    color: var(--text-body);
+}
+
 .flex {
     display: flex;
 }

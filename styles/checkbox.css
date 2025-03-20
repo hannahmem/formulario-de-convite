@@ -1,0 +1,42 @@
+.fieldset-wrapper {
+    padding-top: 2.5rem;
+}
+
+.therms-container {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    position: relative;
+
+    input[type="checkbox"] {
+        opacity: 0;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    & .checkbox-img {
+        background-color: var(--input-base);
+        border-radius: .25rem;
+        border: 1px solid var(--input-stroke);
+        width: 1.25rem;
+        height: 1.25rem;
+        transition: background .1s;
+    }
+
+    &:has(:checked) .checkbox-img {
+        background: url(/assets/icons/check.svg) center;
+        border: 1px solid var(--brand-light);
+    }
+
+    & label {
+        color: var(--text-body);
+        font: var(--body-sm);
+        cursor: pointer;
+
+        & span {
+            color: var(--brand-light);
+        }
+    }
+
+}
+
