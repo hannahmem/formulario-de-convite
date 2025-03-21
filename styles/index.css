@@ -1,11 +1,13 @@
 @import url(global.css);
 @import url(layout.css);
 @import url(input.css);
+@import url(type.css);
 @import url(slider.css);
 @import url(radio.css);
 @import url(colors.css);
 @import url(selectzone.css);
 @import url(switch.css);
+@import url(hr.css);
 @import url(checkbox.css);
 @import url(button.css);
 

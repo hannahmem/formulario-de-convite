@@ -38,6 +38,7 @@
 html {
     color: var(--text-body);
     background-color: #1e1e1e;
+    overflow: hidden;
 }
 
 h3 {
@@ -54,12 +55,4 @@ h2 {
 label {
     font: var(--body-sm);
     color: var(--text-body);
-}
-
-.flex {
-    display: flex;
-}
-
-.grid {
-    display: grid;
 }
