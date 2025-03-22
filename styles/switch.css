@@ -1,46 +1,67 @@
 .switch {
-    position: relative;
-    display: inline-block;
-    
-    input[type="checkbox"] {
-       display: none;
-    }
-    
-    .slider {
-        margin-top: 1rem;
+	display: flex;
+	position: relative;
+	
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	input[type="checkbox"] + .slider {
+		margin-top: 2rem;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		
+		cursor: pointer;
+	}
+	
+	input[type="checkbox"] + .slider::before {
+		content: "";
+		background-color: var(--input-base);
+		border: 1px solid var(--input-stroke);
+		border-radius: 2rem;
+		width: 4rem;
+		height: 2rem;
+	}
+	
+	input[type="checkbox"] + .slider::after {
+		position: absolute;
+		content: "";
+		background-color: var(--input-stroke);
+		border-radius: 50%;
+		width: 1.5rem;
+		height: 1.5rem;
+		left: 1rem;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		transition: .3s;
+	}
+
+	input[type="checkbox"]:checked + .slider::before {
+		background-color: var(--brand-light);
+	}
+				
+	input[type="checkbox"]:checked + .slider::after {
+		background-color: var(--text-heading);
+		transform: translateX(90%) translateY(-50%);
+	}
+
+	.text {
         position: absolute;
-        background-color: var(--input-base);
-        border: 1px solid var(--input-stroke);
-        border-radius: 2rem;
-        width: 4rem;
-        height: 2rem;
+        left: 4.75rem;
+        top: 73%;
+        transform: translateY(-50%);
+		font: var(--body-sm);
+        color: var(--text-heading);
 
-        cursor: pointer;
+		cursor: pointer;
     }
 
-    .slider:before {
-        position: absolute;
-        content: "";
-        background-color: var(--input-stroke);
-        border-radius: 50%;
-        width: 1.5rem;
-        height: 1.5rem;
-        left: 25%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transition: .3s;
-        transition: .3s;
-      }
+	input[type="checkbox"] ~ .text::after {
+        content: "Escuro";
+    }
 
-      input:checked + .slider {
-        background-color: var(--brand-light);
-      }
-            
-      input:checked + .slider:before {
-        background-color: var(--text-heading);
-        -webkit-transform: translateX(85%) translateY(-50%);
-        -ms-transform: translateX(85%) translateY(-50%);
-        transform: translateX(85%) translateY(-50%);
-      }
-
+    input[type="checkbox"]:checked ~ .text::after {
+        content: "Claro";
+    }
 }
