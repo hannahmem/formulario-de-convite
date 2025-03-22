@@ -10,19 +10,50 @@ input, textarea {
     color: var(--text-heading);
 }
 
+.error {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    span {
+        font: var(--body-xs);
+    }
+}
+
+input:invalid + .error,
+textarea:invalid + .error {
+    color: var(--feedback-color);
+
+    & svg path {
+        fill: var(--feedback-color);
+    }
+}
+
+input:invalid, textarea:invalid {
+    border-color: var(--feedback-color);
+}
+
 textarea {
     resize: none;
 }
 
 input:focus, textarea:focus {
     outline: 1.5px solid var(--brand-light);
+    border: none;
+}
+
+input:not(:focus):valid + .error,
+textarea:not(:focus):valid + .error {
+    display: none;
 }
 
 input[type="datetime-local"] {
     color: var(--input-placeholder);
     text-transform: uppercase;
+    cursor: text ;
 
     &::-webkit-calendar-picker-indicator {
         opacity: 0;
     }
 }
+

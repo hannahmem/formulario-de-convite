@@ -14,10 +14,15 @@
         align-items: center;
         gap: .5rem;
 
-        background-color: var(--shape-button);
-        border-radius: .5rem;
-        max-width: 7.4375rem;
-        padding: .75rem;
+        .button-wrapper {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            background-color: var(--shape-button);
+            border-radius: .5rem;
+            max-width: 7.4375rem;
+            padding: .75rem;
+        }
 
         color: var(--text-heading);
 
@@ -26,5 +31,11 @@
         &:hover {
             background-color: var(--shape-hover);
         }
+    }
+    
+    label::after {
+        content: "Nenhum arquivo selecionado";
+        font: var(--body-md);
+        color: var(--input-placeholder);
     }
 }

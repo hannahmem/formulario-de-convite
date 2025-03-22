@@ -41,6 +41,8 @@ aside {
 main {
     overflow-x: auto;
     margin: 1.25rem 1.25rem 1.25rem 0;
+
+    scrollbar-color: #373737 var(--input-placeholder);
     
     & .main-container {
         border-radius: .75rem;
