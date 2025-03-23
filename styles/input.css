@@ -25,12 +25,24 @@ textarea:not(:focus):valid + .error {
 }
 
 input[type="datetime-local"] {
+    position: relative;
     color: var(--input-placeholder);
     text-transform: uppercase;
     cursor: text;
     
     &::-webkit-calendar-picker-indicator {
         opacity: 0;
+        cursor: pointer;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(/assets/icons/calendar.svg) center/contain;
+        width: 1rem;
+        height: 1rem;
+        right: 1rem;
+        top: 1rem;
     }
 }
 
