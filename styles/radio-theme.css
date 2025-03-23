@@ -1,3 +1,7 @@
+#event-theme {
+    margin-top: 1rem;
+}
+
 .radio-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -13,7 +17,7 @@
     padding: .25rem .25rem .5rem .25rem;
 
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color .2s, outline .15s;
 
     & input {
         display: none;

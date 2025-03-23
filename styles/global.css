@@ -52,6 +52,11 @@ h2 {
     padding-bottom: 2.5rem;
 }
 
+legend {
+    font: var(--body-sm); 
+    color: #FFFFFF;
+}
+
 label {
     font: var(--body-sm);
     color: var(--text-body);

@@ -34,7 +34,7 @@
         & span {
             color: var(--brand-light);
             font-weight: 600;
-            text-decoration: underline 0.01rem;
+            text-decoration: underline var(--input-placeholder) 0.01rem;
         }
     }
 }

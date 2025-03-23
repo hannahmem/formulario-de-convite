@@ -40,6 +40,7 @@ aside {
 
 main {
     overflow-x: auto;
+    height: calc(100vh - 1.25rem);
     margin: 1.25rem 1.25rem 1.25rem 0;
 
     scrollbar-color: #373737 var(--input-placeholder);
@@ -70,6 +71,11 @@ main {
     & .input-wrapper {
         display: grid;
         gap: .75rem;
+    }
+
+    .customization-wrapper {
+        display: grid;
+        gap: 1rem;
     }
 
     & .grid-container {
