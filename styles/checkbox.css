@@ -22,7 +22,7 @@
     }
 
     &:has(:checked) .checkbox-img {
-        background: url(/assets/icons/check.svg) center;
+        background: url(../assets/icons/check.svg) center;
         border: 1px solid var(--brand-light);
     }
 

@@ -17,7 +17,7 @@ aside {
         height: 45.5rem;
 
         background: linear-gradient(180deg, rgba(33, 37, 38, 0.8) 0%, rgba(33, 37, 38, 0.65) 20%, rgba(33, 37, 38, 0.3) 40.5%, rgba(33, 37, 38, 0.1) 100%), 
-        url(/assets/background.svg) center/cover;
+        url(../assets/background.svg) center/cover;
         
         & > img {
             max-width: 2.865rem;

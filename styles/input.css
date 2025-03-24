@@ -38,7 +38,7 @@ input[type="datetime-local"] {
     &::before {
         content: "";
         position: absolute;
-        background: url(/assets/icons/calendar.svg) center/contain;
+        background: url(../assets/icons/calendar.svg) center/contain;
         width: 1rem;
         height: 1rem;
         right: 1rem;
