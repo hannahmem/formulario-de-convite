@@ -17,7 +17,7 @@
     padding: .25rem .25rem .5rem .25rem;
 
     cursor: pointer;
-    transition: background-color .2s, outline .15s;
+    transition: background-color .25s, outline .1s;
 
     & input {
         display: none;

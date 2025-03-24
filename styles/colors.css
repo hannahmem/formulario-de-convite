@@ -17,6 +17,7 @@
         border-radius: 50%;
         width: 2.5rem;
         height: 2.5rem;
+        transition: background .2s ease-in-out, outline .1s ease-in-out;
     }
 
     .color-img {
@@ -40,7 +41,6 @@
     &:hover {
         .outer-circle {
             background-color: var(--shape-hover);
-            transition: ease-in-out .15s;
         }
     }
 }
