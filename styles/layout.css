@@ -2,6 +2,8 @@
     max-width: 80rem;
     display: grid;
     grid-template-columns: 34.375% 65.625%;
+    margin: auto;
+
 
     height: 100vh;
     overflow: hidden;
